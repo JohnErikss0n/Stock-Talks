@@ -147,7 +147,7 @@ app = Flask(__name__)
 @app.route('/', methods=['GET','POST'])
 def hello():
     print("Cheese")
-    response = "Poop Stack"
+    response = "Hello"
     req = request.get_json(silent=True, force=True)
     result = req.get("queryResult")
     parameters = result.get("parameters")
