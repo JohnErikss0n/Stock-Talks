@@ -3,10 +3,7 @@ from oauth2client.service_account import ServiceAccountCredentials
 from datetime import datetime
 from lxml import html
 import requests
-from lxml import html
-from flask import Flask
-from flask import make_response, jsonify, request
-from datetime import datetime
+from flask import Flask, make_response, jsonify, request
 
 #Get Spreadsheet Info
 spreadsheet_name = "Portfolio"
