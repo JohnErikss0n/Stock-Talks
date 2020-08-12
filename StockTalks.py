@@ -16,8 +16,8 @@ data = sheet.get_all_records()  # Get a list of all records
 
 def find_ticker(stock_name):
     stock_name = stock_name.replace(" ","+")
-    url = "https://www.google.com/search?q=cheese+stock"
-    url = url.replace("cheese",stock_name)
+    url = "https://www.google.com/search?q=placeholder+stock"
+    url = url.replace("placeholder",stock_name)
     google_request = requests.get(url)
     tree = html.fromstring(google_request.content)
     try:
